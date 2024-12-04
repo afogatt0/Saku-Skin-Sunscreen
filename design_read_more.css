@@ -1,0 +1,121 @@
+body {
+    margin: 0px;
+    width: auto;
+    background-color:  #fc81b8;
+}
+
+/* NAV */
+#tagline {
+    background-color:  #fc81b8;
+    font-size: 20px;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    margin-top: -33px;
+    font-family: "Sagona", sans-serif;
+    word-spacing: 5px;
+    font-weight: 501;
+}   
+
+#title {
+    font-size: 32px;
+    color:#fc81b8;
+    font-family: "Sagona", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 501;
+    margin-left: 50px;
+    position: inherit;
+    margin-right: 1050PX;
+}
+
+
+.navBar {
+    list-style-type: none;
+    margin: 0;
+    margin-top: -18px;
+    padding: 15px;
+    height: 40px;
+    padding-top: 20px;
+}
+
+.nav {
+    position: fixed;
+    width: 100%;
+    background-color:  rgb(246, 226, 235);
+    z-index: 2;
+} 
+
+li {
+    display: inline;
+}
+
+/* FEEDBACK */
+#feedbackBtn{
+    font-size: 16px;
+    margin-right: 14px;
+}
+
+/*HOME*/
+a:link{
+    font-size: 15px;
+    text-decoration: none;  
+    font-family: "Sagona", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: bold;
+    margin-right: 35px;
+    color: #fc81b8;
+    text-transform: capitalize;
+}    
+
+a:visited {
+    color:#fc81b8;
+}
+
+a:hover {
+    text-decoration: underline;
+    color:#f33895;
+}
+
+/* TOP IMAGE */
+
+#read_more_title{
+    font-size: 25px;
+    color:black;
+    font-family: "Epilogue", serif;
+    font-optical-sizing: auto;
+    font-weight: bold;
+    word-spacing: 3px;
+}
+
+#read_more_text {
+    margin: 50px 100px;
+    text-align: justify;
+}
+
+#read_more_page_title {
+    text-transform: uppercase;
+    padding-top: 190px;
+    padding-bottom: 50px;
+    font-size: 49px;
+    color:#fc81b8;
+    font-family: "Sagona", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 501;
+    text-align: center;
+}
+
+p {
+    font-family: "Epilogue", serif;
+    font-weight: 480;
+    font-size: 16px;
+    color: black;
+    line-height: 26px;
+}
+
+.bg {
+    background-color: white;
+    margin: 0 150px;
+    padding-bottom: 10px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+}
+

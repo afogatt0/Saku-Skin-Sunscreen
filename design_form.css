@@ -1,0 +1,63 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+    background-color: rgb(246, 226, 235); /* Matches the theme color */
+    font-family: "Sagona", sans-serif;
+}
+
+form {
+    background-color: white;
+    padding: 30px 50px; /* Adjusted padding */
+    border-radius: 15px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    width: 100%;
+    max-width: 380px; /* Adjusted max width */
+}
+
+h1 {
+    color: #fc81b8;
+    margin-bottom: 30px;
+    font-size: 1.8em; /* Adjusted for better proportion */
+}
+
+label {
+    display: block;
+    margin: 8px 0 5px; /* Reduced margin for uniformity */
+    font-weight: bold;
+    color: #fc81b8;
+}
+
+input, select {
+    width: 80%;
+    padding: 7px; /* Consistent padding */
+    margin-bottom: 15px; /* Consistent margin */
+    border: 1px solid #fc81b8;
+    border-radius: 5px;
+    font-family: "Epilogue", serif;
+    font-size: 14px; /* Uniform font size */
+}
+
+input:focus, select:focus {
+    outline: 1.5px solid #fc81b8;
+}
+
+input[type="submit"] {
+    background-color: #F498C2;
+    color: white;
+    border: none;
+    cursor: pointer;
+    padding: 12px; /* Consistent padding */
+    font-size: 16px; /* Consistent font size */
+    text-transform: uppercase;
+    font-weight: bold;
+    border-radius: 5px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+input[type="submit"]:hover {
+    background-color: #f33895;
+}

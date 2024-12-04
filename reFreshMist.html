@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="design_product2.css">
+
+    <!-- title font -->
+    <link href="https://fonts.cdnfonts.com/css/sagona" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Afacad:ital,wght@0,400..700;1,400..700&family=Anek+Gujarati:wght@100..800&family=Epilogue:ital,wght@0,100..900;1,100..900&family=Gabarito:wght@400..900&family=Kreon:wght@300..700&family=Kumbh+Sans:wght@100..900&family=League+Spartan:wght@100..900&family=Lexend+Deca:wght@100..900&family=Philosopher:ital,wght@0,400;0,700;1,400;1,700&family=Sulphur+Point:wght@300;400;700&display=swap" rel="stylesheet">   
+</head>
+<body>
+<script>
+var images = [
+    "ReFresh.jpg",
+    "ReFresh1.jpg",
+    "ReFresh2.jpg",
+    "ReFresh3.jpg",
+    "ReFresh4.jpg"
+];
+var num = 0;
+function updateSlider(index) {
+    var slider = document.getElementById("slider");
+    slider.src = images[index];
+    var buttons = document.querySelectorAll(".numbering button");
+    buttons.forEach((btn, i) => {
+        if (i === index + 1) {
+            btn.classList.add("active");
+        } else {
+            btn.classList.remove("active");
+        }
+    });
+}
+
+function showImage(index) {
+    if (index >= 0 && index < images.length) {
+        num = index;
+        updateSlider(index);
+    }
+}
+function next() {
+    num++;
+    if (num >= images.length) {
+        num = 0;
+    }
+    updateSlider(num);
+}
+function prev() {
+    num--;
+    if (num < 0) {
+        num = images.length - 1; 
+    }
+    updateSlider(num);
+}
+        
+</script>
+
+<!-- NAVIGATION -->
+    <div class="nav">
+        <p id="tagline">Your Everyday BFF Sunscreen</p>
+                <ul class="navBar">
+                    <li id="title">Saku Skin</li>
+                    <li id="home"><a href="index.html">Home</a> </li>
+                    <li id="aboutUs"><a href="aboutUs.html">About Us</a> </li>
+                </ul>
+    </div>    
+
+    <!-- PRODUCT 1 PICTURES -->
+<table><tr>
+    <th>
+        <div class="images">    
+            <div>
+                <img ID="slider" SRC="ReFresh.jpg" alt="saku" HEIGHT="330px" style="box-shadow: 300px rgb(246, 226, 235) inset; padding: 15px; width: 550px; border: solid 20px #e8abba"/>
+            </div>
+
+            <div id="linedPictures">
+                <div class="image_container">
+                    <img src="ReFresh1.jpg" alt="sunscreen" height="80px" style="box-shadow: 300px rgb(246, 226, 235) inset; padding: 7px; width: 90px; border: solid 15px #e8abba">
+                </div>
+
+                <div class="image_container">
+                    <img src="ReFresh2.jpg" alt="sunscreen" height="80px" style="box-shadow: 300px rgb(246, 226, 235) inset; padding: 7px; width: 90px; border: solid 15px #e8abba">
+                </div>
+
+                <div class="image_container">
+                    <img src="ReFresh3.jpg" alt="sunscreen" height="80px" style="box-shadow: 300px rgb(246, 226, 235) inset; padding: 7px; width: 90px; border: solid 15px #e8abba">
+                </div>
+
+                <div class="image_container">
+                    <img src="ReFresh4.jpg" alt="sunscreen" height="80px" style="box-shadow: 300px rgb(246, 226, 235) inset; padding: 7px; width: 90px; border: solid 15px #e8abba">
+                </div>
+            </div>
+            <div class="numbering">
+                <button id="prevBtn" onclick="prev()"> ⬅ </button>
+                <button onclick="showImage(0)">1</button>
+                <button onclick="showImage(1)">2</button>
+                <button onclick="showImage(2)">3</button>
+                <button onclick="showImage(3)">4</button>
+                <button onclick="showImage(4)">5</button>
+                <button id="nextBtn" onclick="next()"> ➡ </button>
+            </div>
+        </div>
+    <th> 
+        <div class="ptoduct1">
+
+            <!-- NAME -->
+            <h1 class="title">Saku Skin [Re] Fresh Mist <br> Protect 30ml</h1>
+
+            <!-- GET BUTTON -->
+                        <form action="form.html" target="_blank">
+                    <button id="getBtn">GET</button>
+            </form>
+
+            <div class="details"><p> <strong> FDA Approved and Dermatologist Tested. </strong></p>
+                <p id="description">Saku Skin Refresh Mist Protect offers dual protection for your face and body against harmful UVA and UVB rays, while also nourishing and hydrating your skin.</p>
+                <p id="description">Keep your complexion radiant and safeguarded throughout the day with ReFresh Mist Protect!</p>
+
+                <!-- BENEFITS -->
+                <p id="description1">
+                Saku Skin Every Single Day Sunscreen benefits:</p>
+                <ul id="benefits">
+                    <li>Protects: Shields against UVA and UVB damage</li>
+                    <li>Hydrates & Moisturizes: Provides essential moisture and nourishment</li>
+                    <li>Brightens: Enhances skin radiance</li>
+                    <li>Refreshing: Features a cooling effect</li>
+                    <li>Versatile Application: Suitable for bare skin or over makeup</li>
+                    <li>Convenient: Portable and easy to use</li>
+                    <li>SPF 50: High sun protection factor</li>
+                    <li>Dermatologically Tested: Ensured for skin safety</li>
+                </ul>
+<div class="space"></div>
+                <!-- HOW TO USE -->
+                <div class="container_content" style="text-indent: 0; word-spacing: 3px;">
+                <label for="toggle-use" class="icon">▼ How to use</label>
+                <input type="checkbox" id="toggle-use">
+                <p id="container_content1">Hold the sun mist 6-8 inches from your skin and spray evenly over your face and body. Apply to clean, 
+                dry skin and allow it to dry before applying makeup or exposing yourself to the sun. Reapply every 2 hours, or more often if swimming 
+                or sweating.</p>
+                </div>
+                    
+                <!-- INGREDIENTS -->
+                <div class="container_content">
+                <hr>
+                <label for="toggle-ingredients" class="icon1">▼ Ingredients</label>
+                <input type="checkbox" id="toggle-ingredients">
+                    <p id="container_content2">Centella Asiatica, Rose Water Extract, Sodium Hyaluronate, Sakura Extract, Collagen, Rice Bran, Milk Protein, Sun Actives</p>
+                </div>
+
+                <!-- CAUTIONS -->
+                <div class="container_content">
+                <hr>
+                <label for="toggle-cautions" class="icon2">▼ Cautions</label>
+                <hr>
+                <input type="checkbox" id="toggle-cautions">
+                <p id="container_content3">Avoid sparying directly into the eyes; if contact occurs, rinse thoroughly with water. Perform a patch test to check for any allergic reactions or skin sensitivity.<strong> For ages 13 and above years old only. </strong></p>
+                </div>
+            </div>
+        </div>
+    </th> 
+</tr></table>     
+</body>  
+</html>

@@ -1,0 +1,121 @@
+body {
+    margin: 0px;
+    width: auto;
+    background-color:  #fc81b8;
+}
+
+/* NAV */
+#tagline {
+    background-color:  #fc81b8;
+    font-size: 20px;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    margin-top: 0px;
+    font-family: "Sagona", sans-serif;
+    word-spacing: 5px;
+    font-weight: 501;
+}   
+
+#title {
+    font-size: 32px;
+    color:#fc81b8;
+    font-family: "Sagona", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 501;
+    margin-left: 50px;
+    position: inherit;
+    margin-right: 1050PX;
+}
+
+
+.navBar {
+    list-style-type: none;
+    margin: 0;
+    margin-top: -18px;
+    padding: 15px;
+    height: 40px;
+    padding-top: 20px;
+}
+
+.nav {
+    position: fixed;
+    width: 100%;
+    background-color:  rgb(246, 226, 235);
+    z-index: 2;
+} 
+
+li {
+    display: inline;
+}
+
+/* FEEDBACK */
+#feedbackBtn{
+    font-size: 16px;
+    margin-right: 14px;
+}
+
+/*HOME*/
+a:link{
+    font-size: 15px;
+    text-decoration: none;  
+    font-family: "Sagona", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: bold;
+    margin-right: 35px;
+    color: #fc81b8;
+    text-transform: capitalize;
+}    
+
+a:visited {
+    color:#fc81b8;
+}
+
+a:hover {
+    text-decoration: underline;
+    color:#f33895;
+}
+
+/* IFRAMES */
+.references-container {
+    height: 300px;
+    font-size: 20px;
+    display: flex;
+    padding: 200px;
+    margin: 0 150px;
+    background-color: white;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+}
+
+.references-container a {
+    margin-left: -10px;
+    font-size: 20px;
+    text-transform: capitalize;
+    text-align: left;
+    color: black;
+    margin-top: 80px;
+}
+
+.left-section {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 40px;
+    text-align: justify;
+    margin-top: 110px;
+}
+
+
+h1 {
+    position: fixed;
+    text-align: center;
+    margin-top: -100px;
+    font-size: 50px;
+    font-weight: bolder;
+    margin-right: 55px;
+    font-family: "Sagona", sans-serif;
+    color: #fc81b8;
+    margin-bottom: 10px;
+}
+

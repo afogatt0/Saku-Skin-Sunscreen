@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="design_product1.css">
+<!-- title font -->
+    <link href="https://fonts.cdnfonts.com/css/sagona" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Afacad:ital,wght@0,400..700;1,400..700&family=Anek+Gujarati:wght@100..800&family=Epilogue:ital,wght@0,100..900;1,100..900&family=Gabarito:wght@400..900&family=Kreon:wght@300..700&family=Kumbh+Sans:wght@100..900&family=League+Spartan:wght@100..900&family=Lexend+Deca:wght@100..900&family=Philosopher:ital,wght@0,400;0,700;1,400;1,700&family=Sulphur+Point:wght@300;400;700&display=swap" rel="stylesheet">   
+
+</head>
+<body>
+<script src="script.js"></script>
+
+<!-- NAVIGATION -->
+    <div class="nav">
+        <p id="tagline">Your Everyday BFF Sunscreen</p>
+                <ul class="navBar">
+                    <li id="title">Saku Skin</li>
+                    <li id="home"><a href="index.html">Home</a> </li>
+                    <li id="aboutUs"><a href="aboutUs.html">About Us</a> </li>
+                </ul>
+    </div>
+
+        <!-- PRODUCT 1 PICTURES -->
+<table><tr>
+    <th>
+        <div class="images">    
+            <div>
+                <img ID="slider" SRC="sunscreen1.jpg" alt="saku" HEIGHT="330px" style="box-shadow: 300px rgb(246, 226, 235) inset; padding: 15px; width: 550px; border: solid 20px #e8abba"/>
+            </div>
+
+            <div id="linedPictures">
+                <div class="image_container">
+                    <img src="sunscreen.jpg" alt="sunscreen" height="80px" style="box-shadow: 300px rgb(246, 226, 235) inset; padding: 7px; width: 90px; border: solid 15px #e8abba">
+                </div>
+
+                <div class="image_container">
+                    <img src="sunscreen2.jpg" alt="sunscreen" height="80px" style="box-shadow: 300px rgb(246, 226, 235) inset; padding: 7px; width: 90px; border: solid 15px #e8abba">
+                </div>
+
+                <div class="image_container">
+                    <img src="sunscreen3.jpg" alt="sunscreen" height="80px" style="box-shadow: 300px rgb(246, 226, 235) inset; padding: 7px; width: 90px; border: solid 15px #e8abba">
+                </div>
+
+                <div class="image_container">
+                    <img src="sunscreen4.jpg" alt="sunscreen" height="80px" style="box-shadow: 300px rgb(246, 226, 235) inset; padding: 7px; width: 90px; border: solid 15px #e8abba">
+                </div>
+            </div>
+            <div class="numbering">
+                <button id="prevBtn" onclick="prev()"> ⬅ </button>
+                <button onclick="showImage(0)">1</button>
+                <button onclick="showImage(1)">2</button>
+                <button onclick="showImage(2)">3</button>
+                <button onclick="showImage(3)">4</button>
+                <button onclick="showImage(4)">5</button>
+                <button id="nextBtn" onclick="next()"> ➡ </button>
+            </div>
+        </div>
+    <th> 
+        <div class="ptoduct1">
+
+            <!-- NAME -->
+            <h1 class="title">Saku Skin Every Single  <br>Day Sunscreen 50ml</h1>
+
+            <!-- GET BUTTON -->
+            <form action="form.html" target="_blank">
+                    <button id="getBtn">GET</button>
+            </form>
+
+            <div class="details">
+                <p id="description"><p> <strong> FDA Approved and Dermatologist Tested. </strong></p>
+                Saku Skin Every Single Day Sunscreen offers comprehensive skin protection, brightening, moisturizing, 
+                and hydration benefits. This lightweight, fast-absorbing, non-greasy, water-based gel sunscreen leaves no white cast and doubles 
+                as a makeup primer. Ideal for all skin types!</p>
+                
+
+                <!-- BENEFITS -->
+                <p id="description1">Saku Skin Every Single Day Sunscreen benefits:</p>
+                <ul id="benefits">
+                    <li>UVA UVB Broad Spectrum</li>
+                    <li>SPF 50 PA+++</li>
+                    <li>Water-based gel</li>
+                    <li>Lightweight</li>
+                    <li>Non-greasy</li>
+                    <li>No white cast</li>
+                    <li>Cruelty-free</li>
+                    <li>Made with natural ingredients</li>
+                </ul>
+
+            <div class="space"></div>
+                <!-- HOW TO USE -->
+                <div class="container_content">
+                <label for="toggle-use" class="icon">▼ How to use</label>
+                <input type="checkbox" id="toggle-use">
+                <p id="container_content1">Apply a generous layer to your face or body as the final step in your skincare routine
+                and before applying makeup. Reapply every 2 hours for optimal protection.</p>
+                </div>
+                    
+                <!-- INGREDIENTS -->
+                <div class="container_content">
+                <hr>
+                <label for="toggle-ingredients" class="icon1">▼ Ingredients</label>
+                <input type="checkbox" id="toggle-ingredients">
+                <p id="container_content2">Aqua, Aloe Vera Leaf Juice, Glycerine, Avobenzone, Octocrylene, Ethylhexyl Methoxycinnamate, Polyacrylate Crosspolymer-11, Stearic Acid, 
+                Dimethicone, Cyclopentasiloxane, Niacinamide, Titanium Dioxide, Sakura Extract, Hyaluronic Acid, Centella Asiatica, Rose Water Extract, Lecithin, 
+                Licorice Extract, Isopropyl Myristate, PEG-40 Hydrogenated Castor Oil, Carbomer, Hydrolyzed Collagen, Rice Bran, Squalane, Phenoxyethanol, Ethylhexylglycerin, 
+                Fragrance.</p>
+                </div>
+
+                <!-- CAUTIONS -->
+                <div class="container_content">
+                <hr>
+                <label for="toggle-cautions" class="icon2">▼ Cautions</label>
+                <hr>
+                <input type="checkbox" id="toggle-cautions">
+                <p id="container_content3">Avoid sparying directly into the eyes; if contact occurs, rinse thoroughly with water. Perform a patch test to check for any allergic reactions or skin sensitivity.<strong> For ages 13 and above years old only. </strong></p>
+                </div>
+            </div>
+        </div>
+    </th>   
+</tr></table>   
+</body>
+</html>
